@@ -8,13 +8,9 @@ public class NumberofIslands433 {
         if (grid == null || grid.length == 0) {
             return 0;
         }
-
-
         int[] x = {0, 0, 1, -1};
         int[] y = {1, -1, 0, 0};
-
         boolean[][] visited = new boolean[grid.length][grid[0].length];
-
         int island = 0;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[0].length; j++) {
