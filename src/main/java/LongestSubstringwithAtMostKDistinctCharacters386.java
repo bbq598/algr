@@ -50,8 +50,6 @@ public class LongestSubstringwithAtMostKDistinctCharacters386 {
                     break;
                 }
                 data.put(s.charAt(j), data.getOrDefault(s.charAt(j), 0) + 1);
-                String str = s.substring(i, j + 1);
-                int n2 = str.length();
                 j++;
             }
             m = Math.max(m, j - i );
